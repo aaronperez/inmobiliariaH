@@ -11,7 +11,7 @@
     <body>
         <h1>INDEX</h1>
         <h2>
-            <a href="control?target=inmueble&op=insert&action=view">insertar registro</a>
+            <a href="control?target=inmueble&op=insert&action=view">Insertar registro</a>
         </h2>
         <table border="1">
             <thead>
@@ -22,6 +22,10 @@
                     <th>Precio</th>
                     <th>Usuario</th>
                     <th>Fecha de alta</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -30,11 +34,11 @@
                     for(Inmueble i: lista){
                         %>
                 <tr>
-                    <td><%= i.getLocalidad()%></td>
+                    <td><%= i.getLocalidad() %></td>
                     <td><%= i.getDireccion() %></td>
                     <td><%= i.getTipo() %></td>
                     <td><%= i.getPrecio().toString() %></td>
-                    <td><%= i.getUsuario()%></td>
+                    <td><%= i.getUsuario() %></td>
                     <td><%= i.getFechaalta().toString() %></td>
                     <td><a href="control?target=inmueble&op=viewfoto&action=view&id=<%= i.getId() %>">Ver fotos</a></td>
                     <td><a href="control?target=inmueble&op=addfoto&action=view&id=<%= i.getId() %>">Subir foto</a></td>

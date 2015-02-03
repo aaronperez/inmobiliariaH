@@ -57,7 +57,7 @@ public class Controlador extends HttpServlet {
                         inmueble.setDireccion(request.getParameter("direccion"));
                         inmueble.setLocalidad(request.getParameter("localidad"));
                         inmueble.setTipo(request.getParameter("tipo"));
-                        inmueble.setPrecio(Double.parseDouble(request.getParameter("tipo")));
+                        inmueble.setPrecio(Double.parseDouble(request.getParameter("precio")));
                         inmueble.setUsuario("Aaron");
                         Calendar c=Calendar.getInstance();
                         inmueble.setFechaalta(c.getTime());
